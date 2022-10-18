@@ -1,0 +1,60 @@
+1. 
+
+const rand = parseInt(Math.random()*100,10);
+function isdiv(){
+    return rand % 7==0 ? true
+    : rand % 10==0 ?true
+    : false 
+}
+console.log(rand);
+console.log(isdiv());
+
+
+2.
+
+const rand = parseInt(Math.random()*100,10);
+function grade(){
+    return rand>90 ? "A"
+    : rand >80  ?"B"
+    : rand >70  ?"C"
+    : rand >60  ?"C"
+    : rand >49  ?"D"
+    : "F";
+}
+console.log(rand);
+console.log(grade());
+
+3. 
+finds area of circle given radius
+
+function area( radius){
+    return (radius*radius)*3.1415;
+}
+console.log(area(2));
+
+4.
+
+same as before in arrow function 
+
+const area = (radius) => (radius*radius)*3.1415;
+
+const rand = parseInt(Math.random()*100,10);
+
+console.log(area(rand));
+
+5. 
+
+const list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o"]
+console.log(list.length);
+console.log(list[0]);
+console.log(list[list.length-1]);
+list.sort;
+list.push("zz");
+console.log(list);
+list.push(2);
+console.log(list);
+
+
+
+6. 
+

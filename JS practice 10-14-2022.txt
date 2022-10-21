@@ -58,3 +58,75 @@ console.log(list);
 
 6. 
 
+10. 
+
+console.log("test");
+const list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o"]
+list.forEach(myFunction);
+
+
+
+function myFunction(item, index) {
+    console.log('list['+index+'] ='+ item);
+  }
+
+  
+
+
+
+10-12:
+
+
+console.log("test");
+const list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o"];
+class person {
+    constructor(name, age, favcol) {  // Constructor
+      this.name = name;
+      this.age = age;
+      this.favcol = favcol;
+    }
+
+    print(){
+        console.log(this.name+', '+this.age+', '+this.favcol)
+    }
+
+  }
+
+  arlist = new Array();
+  for(let x = 0; x<15 ; x++){
+    arlist.push(new person(list[x],x,'green'));
+
+
+  }
+  
+  arlist[0].print();
+
+  function filterit(val) {
+    return val.name== 'a'||val.name== 'b';
+  }
+
+  function myFunction(num) {
+    return num.age * 10;
+  }
+  
+  //console.log(arlist);
+  console.log(arlist.length);
+  const templist = arlist.filter(filterit);
+  console.log(templist.length);
+  const newArr = templist.map(myFunction);
+  console.log(newArr[1]);
+  
+
+  newArr.sort(function(x, y) {
+    if (x.age < y.age) {
+      return -1;
+    }
+    if (x.age >= y.age) {
+      return 1;
+    }
+   
+  });
+
+
+
+  
